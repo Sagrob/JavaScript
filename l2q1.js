@@ -1,9 +1,9 @@
-let numero1 = 5
-let numero2 = 4
+let numero1 = parseInt(prompt("Insira o primeiro numero: "))
+let numero2 = parseInt(prompt("Insira o segundo numero"))
 
 if(numero1 > numero2){
-    console.log(`${numero1} é o maior`)
+    alert(`${numero1} é o maior`)
 }
 else{
-    console.log(`${numero2} é o maior`)
+    alert(`${numero2} é o maior`)
 }

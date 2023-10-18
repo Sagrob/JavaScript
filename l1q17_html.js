@@ -9,20 +9,17 @@ let galao = 3.6 * 6
 //Lata
 let quantidade_latas = parseInt((area/(lata+0.1))+1)
 let valor = (quantidade_latas * 80.00).toFixed(2)
-console.log(`A quantidade de tinta é: ${quantidade_latas} latas`)
-alert(`O valor é R$ ${valor}`)
+alert(`A quantidade de tinta em latas é: ${quantidade_latas} latas\nO valor é: ${valor}`)
 
 
 //Galão
 quantidade_latas = parseInt((area/(galao+0.1))+1)
 valor = (quantidade_latas * 25.00).toFixed(2)
-console.log(`A quantidade de tinta é: ${quantidade_latas} galões`)
-alert(`O valor é R$ ${valor}`)
+alert(`A quantidade de tinta em galões é: ${quantidade_latas} galões\nO valor é: ${valor}`)
+
 
 //latas e galões
 quantidade_latas = parseInt(area/lata)
 quantidade_galoes = parseInt((area%lata)/galao)
 valor = (quantidade_latas * 80.00 + quantidade_galoes * 25).toFixed(2)
-console.log(`A quantidade de tinta em latas é: ${quantidade_latas}`)
-console.log(`A quantidade de tinta em galões é: ${quantidade_galoes}`)
-alert(`O valor é: ${valor}`)
+alert(`A quantidade de tinta em latas é: ${quantidade_latas} latas\nA quantidade de tinta em galões é: ${quantidade_galoes} galões\nO valor é: ${valor}`)

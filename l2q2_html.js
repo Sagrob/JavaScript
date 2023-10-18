@@ -1,4 +1,4 @@
-const Prompt = require ('prompt-sync')
+// const Prompt = require ('prompt-sync')
 
 //Calcula o IR
 function calcula_ir(salario){
@@ -48,15 +48,10 @@ function calcula_sindicato(salario){
 }
 function relatorio(hora, valor){
     const salario = valor * hora
-    console.log(`Salário Bruto: (${hora}* ${valor}): R$ ${hora*valor}`)
-    console.log(`(-) IR (${faixa_ir(valor*hora)}): R$ ${calcula_ir(salario)}`)
-    console.log(`(-) INSS (10%): R$ ${calcula_inss(salario)}`)
-    console.log(`FGTS (11%): R$ ${calcula_fgts(salario)})`)
-    console.log(`Total de descontos: R$ ${calcula_ir(salario)+calcula_inss(salario)}`)
-    console.log(`Salário Líquido: R$ ${salario-(calcula_ir(salario)+calcula_inss(salario))}`)
+    alert(`Salário Bruto: (${hora}* ${valor}): R$ ${hora*valor}\n(-) IR (${faixa_ir(valor*hora)}): R$ ${calcula_ir(salario)}\n(-) INSS (10%): R$ ${calcula_inss(salario)}\nFGTS (11%): R$ ${calcula_fgts(salario)}\nTotal de descontos: R$ ${calcula_ir(salario)+calcula_inss(salario)}\nSalário Líquido: R$ ${salario-(calcula_ir(salario)+calcula_inss(salario))}`)
 }
 function entrada_dados(){
-    const prompt = Prompt()
+    // const prompt = Prompt()
 
     horas_mes = parseFloat(prompt('Informe a quantidade de horas trabalhadas: '))
     valor_hora = parseFloat(prompt('Informe o valor da hora de trabalho: '))
