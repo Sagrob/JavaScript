@@ -1,6 +1,7 @@
 // const Prompt = require('prompt-sync')
 // const prompt = Prompt()
 
+// Calculo para latas e galões de tinta
 let area = parseFloat(prompt('Informe a área em m^2: '))
 
 let lata = 18 * 6
