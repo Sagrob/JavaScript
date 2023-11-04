@@ -1,0 +1,40 @@
+const Prompt = require('prompt-sync')
+const prompt = Prompt()
+
+function somar(a,b){
+    return a+b;
+}
+function subtrair(a,b){
+    return a-b;
+}
+function multiplicar(a,b){
+    return a*b;
+}
+function dividir(a,b){
+    return a/b;
+}
+
+
+
+while (true) {
+    const operacao = prompt(" 1-Somar \n 2-Dividir \n 3-Multiplicar \n 4-Subtrair \n 0-Sair \n Qual operação deseja: ");
+    if (parseInt(operacao) === 0) {
+        break;
+    }
+
+    const primeiro_numero = parseInt(prompt("Primeiro numero: "));
+    const segundo_numero = parseInt(prompt("Segundo numero: "));
+
+    let resultado;
+    if (parseInt(operacao) === 1) {
+        resultado = somar(primeiro_numero, segundo_numero);
+    } else if (parseInt(operacao) === 2) {
+        resultado = dividir(primeiro_numero, segundo_numero);
+    } else if (parseInt(operacao) === 3) {
+        resultado = multiplicar(primeiro_numero, segundo_numero);
+    } else if (parseInt(operacao) === 4) {
+        resultado = subtrair(primeiro_numero, segundo_numero);
+    }
+
+    console.log("resultado: " + resultado + "\n");
+}
