@@ -20,12 +20,11 @@ let resultadoa = multia(alcool,tank);
 console.log(resultadoa)
 let resultadob = multig(gasolina,tank);
 console.log(resultadob)
-if (parseFloat(resultado) < 0,7){
-    resultado = multia(alcool,tank);
+if (resultado < 0,7){
+    resultado = resultadoa;
     alert("Compensa encher o tanque com álcool, e o valor para encher o tanque é de R$" + resultadoa);
-}
-else if (parseFloat(resultado) > 0,7){
-    resultado = multig(gasolina,tank);
+} else if (resultado > 0,7){
+    resultado = resultadob;
     alert("Compensa encher o tanque com gasolina, e o valor para encher o tanque é de R$" + resultadob);
 }
 }
