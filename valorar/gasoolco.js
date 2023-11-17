@@ -5,25 +5,19 @@ function divisao(a,b){
 function multia(a,c){
     return a*c;
 }
-
-function multig(c,b){
-    return c*b;
-}
 function jb(){
 const tank = parseFloat(document.getElementById("fname").value);
 const gasolina = parseFloat(document.getElementById("lname").value);
 const alcool = parseFloat(document.getElementById("mname").value);
 
 let resultado = divisao(gasolina, alcool);
-console.log(resultado)
 let resultadoa = multia(alcool,tank);
-console.log(resultadoa)
-let resultadob = multig(gasolina,tank);
-console.log(resultadob)
-if (resultado < 0,7){
+let resultadob = multia(gasolina,tank);
+
+if (resultado < 0.7){
     resultado = resultadoa;
     alert("Compensa encher o tanque com álcool, e o valor para encher o tanque é de R$" + resultadoa);
-} else if (resultado > 0,7){
+}else if(resultado > 0.7){
     resultado = resultadob;
     alert("Compensa encher o tanque com gasolina, e o valor para encher o tanque é de R$" + resultadob);
 }
