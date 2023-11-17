@@ -16,9 +16,9 @@ let resultadob = multia(gasolina,tank);
 
 if (resultado >= 0.7){
     resultado = resultadoa;
-    alert("Compensa encher o tanque com álcool, e o valor para encher o tanque é de R$" + resultadoa);
+    alert("Compensa encher "+ tank +" litros com álcool e o valor para encher "+ tank + " litros é de R$" + resultadoa);
 }else if(resultado < 0.7){
     resultado = resultadob;
-    alert("Compensa encher o tanque com gasolina, e o valor para encher o tanque é de R$" + resultadob);
+    alert("Compensa encher "+ tank +" litros com Gasolina e o valor para encher "+ tank + " litros é de R$" + resultadob);
 }
 }
