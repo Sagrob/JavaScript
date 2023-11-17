@@ -10,9 +10,9 @@ function multig(c,b){
     return c*b;
 }
 function jb(){
-const tank = document.getElementById("fname");
-const gasolina = document.getElementById("lname");
-const alcool = document.getElementById("mname");
+const tank = parseFloat(document.getElementById("fname").value);
+const gasolina = parseFloat(document.getElementById("lname").value);
+const alcool = parseFloat(document.getElementById("mname").value);
 
 let resultado = divisao(gasolina, alcool);
 console.log(resultado)
