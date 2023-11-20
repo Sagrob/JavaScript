@@ -14,10 +14,10 @@ let resultado = divisao(gasolina, alcool);
 let resultadoa = multia(alcool,tank);
 let resultadob = multia(gasolina,tank);
 
-if (resultado >= 0.7){
+if (resultado <= 0.7){
     resultado = resultadoa;
     alert("Compensa encher "+ tank +" litros com álcool e o valor para encher "+ tank + " litros é de R$" + resultadoa);
-}else if(resultado < 0.7){
+}else if(resultado > 0.7){
     resultado = resultadob;
     alert("Compensa encher "+ tank +" litros com Gasolina e o valor para encher "+ tank + " litros é de R$" + resultadob);
 }
